@@ -1,0 +1,29 @@
+1. Upload any Arduino IDE sketch:
+
+"C:\Users\ADMIN\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17/bin/avrdude" "-CC:\Users\ADMIN\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17/etc/avrdude.conf" -v -V -patmega2560 -cwiring "-PCOM5" -b115200 -D "-Uflash:w:C:\Users\ADMIN\AppData\Local\Temp\arduino\sketches\5C6648C241AA85F50F56DA42ADB94C58/Blink.ino.hex:i"
+
+
+
+
+
+2. MIcroChip Studio External Tools Command:
+
+C:\Users\ADMIN\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17/bin/avrdude.exe
+
+
+
+
+3. MicroChip Studio External Tools Argument:
+
+-C"C:\Users\ADMIN\AppData\Local\Arduino15\packages\arduino\tools\avrdude\6.3.0-arduino17/etc/avrdude.conf" -v -V -patmega2560 -cwiring "-PCOM5" -b115200 -D "-Uflash:w:"$(ProjectDir)Debug\$(TargetName).hex":i
+
+
+
+
+4. *Make sure use Output Window is checked*
+
+
+
+
+
+5. To upload code after build, Tools > Click on name of external tool you made > Code uploaded
